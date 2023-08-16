@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styleBooki.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/faaba786e9.js" crossorigin="anonymous"></script>
+        <title>Booki.com</title>
+    </head>
+    <body>
+<!-- La partie qui concerne le header, logo et liens -->
+        <header class="headpart">
+                <h1 class="headleft">
+                    <img class="logo" src="imgBooki\Booki_mini.png">
+                </h1>
+                <div class="headright">
+                    <a class="headlink" href="#hébergements"><p class="headlinktxt">Hébergements</p></a>
+                    <a class="headlink" href="#activites"><p class="headlinktxt">Activités</p></a>
+                </div>
+        </header>
+<!-- Ici les informations et champs de recherche -->
+        <nav>
+            <div class="infogroup">
+                <div class="searchtext">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                    <p>Bonjour</p>
+                </div>
+                <div class="searchbar">
+                    <div class="pointer">
+                        <div class="point" > 
+                            <i class="fa-solid fa-location-dot fa-l"></i> 
+                        </div>
+                    </div>
+                    <div class="searchfield">
+                        <form method="post" action="">
+                            <input class="field" type="text" name="research" placeholder="Marseille, France">
+                        </form>
+                    </div>
+                    <div>
+                        <button class="searchbutton"> Rechercher</button>
+                    </div>
+                </div>
+<!-- Ici les filtres -->
+                <div class="filters">
+                    <div class="filtertext">
+                        <p><strong>Filtres</strong></p>
+                    </div>
+                    <div class="filterbuttons">
+                            <button type="button" class="button">
+                                <span class="filter_icon">
+                                    <i class="fa-solid fa-money-bill-wave fa-xl"></i>
+                                </span>
+                                <p> Economique</p>
+                            </button>
+                            <button class="button">
+                                <span class="filter_icon">
+                                    <i class="fa-solid fa-person fa-xl"></i>
+                                </span>
+                                <p class="filterbutton_text">Familial</p>
+                            </button>
+                            <button class="button">
+                                <span class="filter_icon">
+                                    <i class="fa-solid fa-heart fa-xl"></i>
+                                </span>
+                                <p>Romantique</p>
+                            </button>
+                            <button class="button">
+                                <span class="filter_icon">
+                                    <i class="fa-solid fa-fire fa-xl"></i>
+                                </span>
+                                <p>Nos pépites</p>
+                            </button>
+                    </div>
+                </div>
+<!-- Ici les informations de la recherche -->
+                <div class="searchinfo">
+                    <div class="infobox">
+                        <span class="lei">
+                            <i class="fa-solid fa-info"></i>
+                        </span>
+                    </div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>    
+            </div>
+        </nav>
+<!-- Ici les champs de résultats -->
+        <main>
+            <div class="searchgroup">
+                <div class="mainOffer">
+                    <div class="maintitle">
+                        <h2 id="hébergements">Hébergements à Marseille</h2>
+                    </div>
+<!-- Ici le champ du haut du groupe mainoffer -->
+                    <div class="order">
+                        <div class="mainofferlink">
+                            <a class="offer" href="#">
+                                <div class="offerphoto">
+                                    <img src="imgBooki\hotel_du_port.jpg" class="photo">
+                                </div>
+                                <div class="offertext">
+                                    <p><strong>Hôtel du port</strong></p>
+                                    <p>Nuit à partir de 52€</p>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="grey_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mainofferlink">
+                            <a class="offer" href="#">
+                                <div class="offerphoto">
+                                    <img src="imgBooki\hotel_chez_amina.jpg" class="photo">
+                                </div>                                
+                                <div class="offertext">
+                                    <p><strong>Hôtel Chez Amina</strong></p>
+                                    <p>Nuit à partir de 96€</p>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="grey_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mainofferlink">                    
+                            <a class="offer" href="#">
+                                <div class="offerphoto">
+                                    <img src="imgBooki\hotel_les_mouettes.jpg" class="photo">
+                                </div>
+                                <div class="offertext">
+                                    <p><strong>Hôtel Les mouettes</strong></p>
+                                    <p>Nuit à partir de 76€</p>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="grey_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+<!-- Ici le champ du bas du groupe mainoffer -->
+                    <div class="order">
+                        <div class="mainofferlink">
+                            <a class="offer" href="#">
+                                <div class="offerphoto">
+                                    <img src="imgBooki\hotel_de_la_mer.jpg" class="photo">
+                                </div>
+                                <div class="offertext">
+                                    <p><strong>Hôtel de la mer</strong></p>
+                                    <p>Nuit à partir de 46€</p>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="grey_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mainofferlink">                   
+                            <a class="offer" href="#">
+                                <div class="offerphoto">
+                                    <img src="imgBooki\hotel_la_canebiere.jpg" class="photo">
+                                </div>
+                                <div class="offertext">
+                                    <p><strong>Auberge La Canebière</strong></p>
+                                    <p>Nuit à partir de 25€</p>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="grey_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mainofferlink">                    
+                            <a class="offer" href="#">
+                                <div class="offerphoto">
+                                    <img src="imgBooki\hotel_le_panier.jpg" class="photo">
+                                </div>
+                                <div class="offertext">
+                                    <p><strong>Auberge Le Panier</strong></p>
+                                    <p>Nuit à partir de 52€</p>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="grey_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="moreresults">Afficher plus</h4>
+                </div>
+<!-- Ici les résultats populaires -->
+                <div class="popular">
+                    <div class="poptitle">
+                        <h1>Les plus populaires</h1>
+                        <span class="ratingbox">
+                            <i class="fa-solid fa-chart-line fa-xl"></i>
+                        </span>
+                    </div>
+                    <div class="popimg">
+                        <a class="sideoffer" href="#">
+                                <div class="sideofferphoto">
+                                    <img src="imgBooki\hotel_chambre_verte.jpg" class="sidephoto">
+                                </div>
+                                <div class="sideoffertext">
+                                    <div>
+                                        <p><strong>Hôtel Le soleil du matin</strong></p>
+                                        <p>Nuit à partir de 128€</p>
+                                    </div>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                        <a class="sideoffer" href="#">
+                                <div class="sideofferphoto">
+                                    <img src="imgBooki\hotel_jolie_chambre.jpg" class="sidephoto">
+                                </div>
+                                <div class="sideoffertext">
+                                    <div>
+                                        <p><strong>Chambres d'hôtes au coeur de l'eau</strong></p>
+                                        <p>Nuit à partir de 71€</p>
+                                    </div>
+                                    <div class="ranking">
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="blue_star">    
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="grey_star">
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>                 
+                        </a>
+                        <a class="sideoffer" href="#">
+                            <div class="sideofferphoto">
+                                <img src="imgBooki\hotel_tip_top.jpg" class="sidephoto">
+                            </div>
+                            <div class="sideoffertext">
+                                <div>
+                                    <p><strong>Auberge Bleu et Blanc</strong></p>
+                                    <p>Nuit à partir de 67€</p>
+                                </div>
+                                <div class="ranking">
+                                    <div class="blue_star">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="blue_star">    
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="blue_star">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="blue_star">    
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="grey_star">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!-- Ici les activités proposées -->
+        <aside class="activities">
+            <div class="actitxt">
+                <h1 id="activites">Activités à Marseille</h1>
+            </div>
+            <div class="actipic">
+                <a href="#" class="actphoto">
+                    <div class="actphotopic">
+                        <img src="imgBooki\paysage_vieux_port.jpg" class="activitiesphoto">
+                    </div>
+                    <div class="actphototxt">
+                        <h4>Vieux-Port</h4>
+                    </div>
+                </a>
+                <a href="#" class="actphoto">
+                    <div class="actphotopic">
+                        <img src="imgBooki\paysage_fort_pomègues.jpg" class="activitiesphoto">
+                    </div>
+                    <div class="actphototxt">                        
+                        <h4>Fort de Pomègues</h4>
+                    </div>
+                </a>
+                <a href="#" class="actphoto">
+                    <div class="actphotopic">                        
+                        <img src="imgBooki\paysage_parc_calanques.jpg" class="activitiesphoto">
+                    </div>
+                    <div class="actphototxt">
+                        <h4>Parc national des Calanques</h4>
+                    </div>
+                </a>
+                <a href="#" class="actphoto">
+                    <div class="actphotopic">
+                        <img src="imgBooki\paysage_nd_delagarde.jpg" class="activitiesphoto">
+                    </div>
+                    <div class="actphototxt">
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </div>
+                </a>
+            </div>
+        </aside>
+       
+        <footer>
+            <div class="foot">
+                <div class="subfoot" id="ToKnow">
+                    <h4>À propos</h4>
+                    <a class="subfootLink" href="#">Fonctionnement du site</a>
+                    <a class="subfootLink" href="#">Conditions générales</a>
+                    <a class="subfootLink" href="#">Données et confidentialités</a>
+                </div>
+                <div class="subfoot" id="Bedrooms">
+                    <h4>Nos hébergements</h4>
+                    <a class="subfootLink" href="#">Charte qualité</a>
+                    <a class="subfootLink" href="#">Proposer votre hôtel</a>            
+                </div>
+                <div class="subfoot" id="Help">
+                    <h4>Assistance</h4>
+                    <a class="subfootLink" href="#">Centre d'aide</a>
+                    <a class="subfootLink" href="#">Nous contacter</a>
+                </div>
+            </div>
+        </footer>      
+
+    </body>
+</html>

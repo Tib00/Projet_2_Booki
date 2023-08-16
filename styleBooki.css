@@ -1,0 +1,429 @@
+/* Ici le CSS qui concerne le header */
+.headpart{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.headleft{
+	margin-left: 5%;
+}
+.headright{
+	height: 35px;
+	width: 328.6px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	}
+.logo{
+	height: 19px;
+	width: 61.09px;
+	padding-top: 30px;
+}
+.headlink{
+	color: black;
+	text-decoration: none;
+	padding-top: 25px;
+}
+.headlink:hover{
+	color: #0065FC;
+	border-top: 2px blue solid;
+}
+/* Ici le CSS qui concerne le corps du document */
+
+/* Ici le CSS qui concerne les premières lignes de texte */
+h1,h2,h5,p,a{
+	font-family: 'Raleway', sans-serif;
+}
+h5{	size: 22px;
+}
+.searchtext{
+	margin-left: 5%;
+}
+
+/* Ici le CSS qui concerne la barre de recherche */
+.pointer{
+	background-color: #F2F2F2;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px 0px 0px 10px;
+}
+.point{
+	padding-top: 10px;
+}
+.searchbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-left: 5%;
+}
+.field{
+	height: 33px;
+}
+input::placeholder{
+	color: black;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+.searchbutton{
+	background-color: #0065FC;
+	border: 1px #0065FC solid;
+	color: white;
+	height: 40px;
+	border-radius: 0px 10px 10px 0px;
+}
+.imgbutton{
+	margin: 10px 5px 0px 5px;
+}
+
+/* Ici le CSS qui concerne les filtres */
+.filters{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 50%;
+	margin-block: 10px;
+	margin-left: 5%;
+}
+.filterbuttons{
+	display: flex;
+	flex-direction: row;
+	width: 110%;
+}
+.button{
+	border: 2px grey solid;
+	border-radius: 25px;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0% 5% 0% 5%;
+	width: 100%;
+	height: 85%;
+}
+.button:hover{
+	background-color: #DEEBFF;
+}
+.filter_icon{
+	color: #0065FC;
+	margin-top: 10%;
+}
+/* Ici le CSS qui concerne la ligne d'informations */
+.searchinfo{
+	display: flex;
+	flex-direction: row;
+}
+.infobox{
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	border: 1px grey solid;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+	margin: 10px 10px 10px 5%;
+}
+.lei{
+	color: #0065FC;
+	margin-top: 12%;
+}
+/* Ici le CSS qui concerne les différents champs de résultats */
+.searchgroup{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+/* Ici le CSS qui concerne les offres principales */
+.mainOffer{
+	width: 60%;
+	background-color: #F2F2F2;
+	border: 1px #F2F2F2 solid;
+	border-radius: 15px;
+}
+.maintitle{
+	margin: 0% 5% 0% 5%;
+}
+
+.order{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 30%;
+	width: 90%;
+	margin: 5% 0% 5% 5%;
+}
+.mainofferlink{
+	background-color: white;
+	border-radius: 25px;
+	width: 30%;
+}
+.offer{
+	color: black;
+	text-decoration: none;
+}
+.offerphoto{
+	width: 96%;
+	height: 50%;
+	margin: 2% 2% 0% 2%;
+}
+img[class="photo"]{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ border-radius: 25px 25px 0px 0px;
+}
+.moreresults{
+	margin-left: 5%;
+}
+/*Ici l'offre populaire*/
+.popular{
+	width: 30%;
+	background-color: #F2F2F2;
+	border: 1px #F2F2F2 solid;
+	border-radius: 15px;
+}
+.popimg{
+	width: 90%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 5%;
+}
+.sideoffer{
+	background-color: white;
+	border-radius: 25px;
+	height: 20%;
+	display: flex;
+	flex-direction: row;
+	color: black;
+	text-decoration: none;
+}
+
+.sideofferphoto{
+	height: 90%;
+	width: 32%;
+	margin: 2.5% 0% 5% 2%;
+}
+img[class="sidephoto"]{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ border-radius: 25px 0px 0px 25px;
+}
+.offertext,.sideoffertext{
+	margin-left: 2%;
+}
+.sideoffertext{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.ranking{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 7%;
+}
+.blue_star{
+	color: #0065FC;
+}
+.grey_star{
+	color:#F2F2F2
+}
+.poptitle{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0% 5% 0% 5%;
+}
+.ratingbox{
+	color: #0065FC;
+	margin: 5%;
+}
+/*Ici le CSS concernant les activités*/
+.activities{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 5% 5% 0% 5%;
+}
+.actipic{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.actphoto{
+	width: 20%;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+	margin: 2% 2% 2% 2%;
+	color: black;
+	text-decoration: none;
+}
+.actphotopic{
+	width: 100%;
+	height: 90%;
+}
+.actphototxt{
+	margin-left: 5%;
+}
+img[class="activitiesphoto"]{
+	height: 100%;
+ 	width: 100%;
+ 	object-fit: cover;
+ 	border-radius: 20px 20px 0px 0px;
+}
+/* Ici le CSS qui concerne le footer */
+.foot{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90%;
+	margin: 5% 5% 0% 5%;
+	background-color: #F2F2F2;
+}
+.subfoot{
+	display: flex;
+	flex-direction: column;
+	margin: 0% 2.5% 0% 2.5%;
+}
+.subfootLink{
+	color: black;
+	text-decoration: none;
+}
+/*Et maintenant les médias querries yeah ! */
+@media all and (min-width: 768px) and (max-width: 1024px){
+	.filters{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	
+	}
+	.filterbuttons{
+		margin-left: 5%;
+	}
+	.searchgroup{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	}
+	.order{
+		height: 300px;
+	}
+	.offertext{
+		margin-left: 5%;
+	}
+	.mainOffer,.popular{
+		width: 90%;
+		margin: 5%;
+	}
+	.popimg{
+		width: 95%;
+		margin: 0% 0% 5% 2.5%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.sideoffer{
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 100%;
+		width: 30%;
+	}
+	.sideofferphoto{
+		height: 90%;
+		flex: 40%;
+		margin: 2.5% 0% 5% 2%;
+	}
+	.sideoffertext{
+		flex: 55%;
+	}
+	.actphotopic{
+		height: 78%;
+	}
+}
+@media all and (max-width: 767px){
+	.headpart{
+		display: flex;
+		flex-direction: column;
+	}
+	.headleft{
+		margin-left: 0%;
+		align-self: center;
+	}
+	.headright{
+		width: auto;
+		display: flex;
+		flex-direction: row;
+	}
+	.headlink{
+		width: 50%;
+		padding-top: 0px;
+		border-bottom:  2px #F2F2F2 solid;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.headlink:hover{
+		border-top: 0px;
+		border-bottom: 2px #0065FC solid;
+	}
+	.filters{
+		width: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.filterbuttons{
+		width: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.button{
+		margin: 0% 5% 2.5% 0%;
+		width: 40%;
+	}
+	.searchgroup{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.popular{
+		width: auto;
+		border-radius: 0%;
+	}
+	.mainOffer{
+		width: auto;
+		border: 1px white solid;
+		background-color: white;
+	}
+	.order{
+		display: flex;
+		flex-direction: column;
+	}
+	.mainofferlink{
+		width: auto;
+		box-shadow: 5px 5px 5px #F2F2F2;
+	}
+	.actipic{
+		display: flex;
+		flex-direction: column;
+	}
+	.actphoto{
+		width: auto;
+	}
+	.foot{
+		display: flex;
+		flex-direction: column;
+	}
+}

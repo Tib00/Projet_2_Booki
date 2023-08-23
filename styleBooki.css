@@ -1,4 +1,9 @@
 /* Ici le CSS qui concerne le header */
+/*reset CSS a faire systematiquement */
+*{
+	margin: 0;
+	padding: 0;
+}
 .headpart{
 	display: flex;
 	flex-direction: row;
@@ -32,15 +37,19 @@
 /* Ici le CSS qui concerne le corps du document */
 
 /* Ici le CSS qui concerne les premières lignes de texte */
-h1,h2,h5,p,a{
+h1,h2,p,a{
 	font-family: 'Raleway', sans-serif;
 }
-h5{	size: 22px;
+h2{	size: 22px;
 }
 .searchtext{
-	margin-left: 5%;
+	margin-bottom: 3%;
+	line-height: 2em;
 }
-
+/* Ici le CSS qui concerne l'infogroup en général */
+.infogroup{
+	margin: 5% 5% 0% 5%;
+}
 /* Ici le CSS qui concerne la barre de recherche */
 .pointer{
 	background-color: #F2F2F2;
@@ -48,7 +57,7 @@ h5{	size: 22px;
 	width: 40px;
 	display: flex;
 	justify-content: center;
-	border-radius: 10px 0px 0px 10px;
+	border-radius: 15px 0px 0px 15px;
 }
 .point{
 	padding-top: 10px;
@@ -57,78 +66,92 @@ h5{	size: 22px;
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
-	margin-left: 5%;
+	margin-bottom: 10px;
 }
 .field{
-	height: 33px;
+	height: 36px;
 }
 input::placeholder{
 	color: black;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 	text-align: center;
 }
 .searchbutton{
+	width: 100px;
 	background-color: #0065FC;
 	border: 1px #0065FC solid;
 	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 	height: 40px;
-	border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 15px 15px 0px;
 }
-.imgbutton{
-	margin: 10px 5px 0px 5px;
+.magnifying_glass{
+	visibility:hidden;
 }
-
 /* Ici le CSS qui concerne les filtres */
 .filters{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 	width: 50%;
-	margin-block: 10px;
-	margin-left: 5%;
 }
-.filterbuttons{
+.filtertext{
+	width: 10%;
+	padding-bottom: 10px;
 	display: flex;
 	flex-direction: row;
-	width: 110%;
+	align-items: center;
+}
+.filterbuttons{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 5px;
 }
 .button{
-	border: 2px grey solid;
+	border: 2px #D9D9D9 solid;
 	border-radius: 25px;
+	width: 130px;
+	height: 50px;
 	background-color: white;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	margin: 0% 5% 0% 5%;
-	width: 100%;
-	height: 85%;
+	justify-content: center;
+	align-items: center;
+	margin: 0% 2.5% 0% 2.5%;
 }
 .button:hover{
 	background-color: #DEEBFF;
 }
 .filter_icon{
 	color: #0065FC;
-	margin-top: 10%;
+}
+.filterbuttons_text{
+	font-size: 14px;
+	font-weight: 700;
+	margin-left: 5%;
+
 }
 /* Ici le CSS qui concerne la ligne d'informations */
 .searchinfo{
 	display: flex;
 	flex-direction: row;
+	margin-top: 10px;
 }
 .infobox{
 	background-color: white;
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	border: 1px grey solid;
 	border-radius: 25px;
 	display: flex;
 	justify-content: center;
-	margin: 10px 10px 10px 5%;
+	margin: 0px 10px 10px 0%;
 }
 .lei{
 	color: #0065FC;
-	margin-top: 12%;
 }
 /* Ici le CSS qui concerne les différents champs de résultats */
 .searchgroup{
@@ -145,27 +168,27 @@ input::placeholder{
 	border-radius: 15px;
 }
 .maintitle{
-	margin: 0% 5% 0% 5%;
+	width: 90%;
+	margin: 2.5% 0% 0% 5%;
 }
-
 .order{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 30%;
+	height: 25%;
 	width: 90%;
 	margin: 5% 0% 5% 5%;
 }
-.mainofferlink{
+.card_main{
 	background-color: white;
 	border-radius: 25px;
 	width: 30%;
 }
-.offer{
+.card_main_link{
 	color: black;
 	text-decoration: none;
 }
-.offerphoto{
+.card_main_photo{
 	width: 96%;
 	height: 50%;
 	margin: 2% 2% 0% 2%;
@@ -176,6 +199,11 @@ img[class="photo"]{
  object-fit: cover;
  border-radius: 25px 25px 0px 0px;
 }
+.card_main_title,.card_main_body{
+	padding: 5%;
+	line-height: 2em;
+}
+
 .moreresults{
 	margin-left: 5%;
 }
@@ -186,7 +214,18 @@ img[class="photo"]{
 	border: 1px #F2F2F2 solid;
 	border-radius: 15px;
 }
-.popimg{
+.popular_title{
+	width: 90%;
+	margin: 5% 0% 0% 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.ratingbox{
+	color: #0065FC;
+	height: inherit;
+}
+.popular_body{
 	width: 90%;
 	height: 90%;
 	display: flex;
@@ -194,20 +233,22 @@ img[class="photo"]{
 	justify-content: space-around;
 	margin-left: 5%;
 }
-.sideoffer{
+.card_popular{
 	background-color: white;
 	border-radius: 25px;
 	height: 20%;
-	display: flex;
-	flex-direction: row;
+}
+.card_popular_link{
 	color: black;
 	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
-
-.sideofferphoto{
-	height: 90%;
-	width: 32%;
-	margin: 2.5% 0% 5% 2%;
+.card_popular_photo{
+	height: 175px;
+	width: 40%;
+	margin: 2.5%;
 }
 img[class="sidephoto"]{
  height: 100%;
@@ -215,36 +256,27 @@ img[class="sidephoto"]{
  object-fit: cover;
  border-radius: 25px 0px 0px 25px;
 }
-.offertext,.sideoffertext{
-	margin-left: 2%;
-}
-.sideoffertext{
+.card_popular_body{
+	margin: 2.5%;
+	line-height: 2em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
 .ranking{
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 7%;
 }
+.popular_ranking{
+	display: flex;
+	flex-direction: row;
+}
 .blue_star{
 	color: #0065FC;
 }
 .grey_star{
 	color:#F2F2F2
-}
-.poptitle{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 90%;
-	margin: 0% 5% 0% 5%;
-}
-.ratingbox{
-	color: #0065FC;
-	margin: 5%;
 }
 /*Ici le CSS concernant les activités*/
 .activities{
@@ -253,25 +285,29 @@ img[class="sidephoto"]{
 	width: 90%;
 	margin: 5% 5% 0% 5%;
 }
-.actipic{
+.activities_list{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
-.actphoto{
+.card_activities{
 	width: 20%;
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: 5px 5px 5px #F2F2F2;
 	margin: 2% 2% 2% 2%;
+}
+.card_activities_link{
 	color: black;
 	text-decoration: none;
 }
-.actphotopic{
+.card_activities_photo{
 	width: 100%;
-	height: 90%;
+	height: 85%;
 }
-.actphototxt{
-	margin-left: 5%;
+.card_activities_title{
+	margin: 5%;
+	font-size: large;
+	font-weight: 700;
 }
 img[class="activitiesphoto"]{
 	height: 100%;
@@ -296,8 +332,15 @@ img[class="activitiesphoto"]{
 .subfootLink{
 	color: black;
 	text-decoration: none;
+	line-height: 1.4em;
 }
 /*Et maintenant les médias querries yeah ! */
+@media all and (min-width: 1025px){
+		.body{
+			margin: 0 auto;
+			width: 1440px;
+		}
+}
 @media all and (min-width: 768px) and (max-width: 1024px){
 	.filters{
 		width: 80%;
@@ -324,7 +367,7 @@ img[class="activitiesphoto"]{
 		width: 90%;
 		margin: 5%;
 	}
-	.popimg{
+	.popular_body{
 		width: 95%;
 		margin: 0% 0% 5% 2.5%;
 		display: flex;
@@ -347,11 +390,12 @@ img[class="activitiesphoto"]{
 	.sideoffertext{
 		flex: 55%;
 	}
-	.actphotopic{
+	.card_activities_photo{
 		height: 78%;
 	}
 }
 @media all and (max-width: 767px){
+	/********** Header *************/
 	.headpart{
 		display: flex;
 		flex-direction: column;
@@ -378,6 +422,25 @@ img[class="activitiesphoto"]{
 		border-top: 0px;
 		border-bottom: 2px #0065FC solid;
 	}
+	/********** Section de recherche *************/
+	.searchbar{
+		width: fit-content;
+		margin: 0 auto;
+	}
+	.searchbutton{
+		display: none;
+	}
+	.magnifying_glass{
+		visibility: visible;
+		background-color: #0065FC;
+		border: 1px #0065FC solid;
+		color: white;
+		width: 40px;
+		height: 40px;
+		border-radius: 0px 15px 15px 0px;
+
+	}
+	/********** Filtres *************/
 	.filters{
 		width: auto;
 		display: flex;
@@ -394,6 +457,7 @@ img[class="activitiesphoto"]{
 		margin: 0% 5% 2.5% 0%;
 		width: 40%;
 	}
+	/********** Recherche *************/
 	.searchgroup{
 		display: flex;
 		flex-direction: column-reverse;
@@ -402,10 +466,22 @@ img[class="activitiesphoto"]{
 		width: auto;
 		border-radius: 0%;
 	}
+	.card_popular{
+		height: 146px;
+		margin: 15px 0px 15px 0px;
+	}
+	.card_popular_photo{
+		height: 130px;
+	}
 	.mainOffer{
 		width: auto;
 		border: 1px white solid;
 		background-color: white;
+	}
+	.card_main{
+		width: auto;
+		height: 300px;
+		margin-bottom: 15px;
 	}
 	.order{
 		display: flex;
@@ -415,15 +491,25 @@ img[class="activitiesphoto"]{
 		width: auto;
 		box-shadow: 5px 5px 5px #F2F2F2;
 	}
-	.actipic{
+	.activities_list{
 		display: flex;
 		flex-direction: column;
 	}
-	.actphoto{
+	.card_activities{
+		width: auto;
+		height: 275px;
+	}
+	.card_activities_link{
 		width: auto;
 	}
 	.foot{
+		width: 100%;
+		margin-left: 0;
 		display: flex;
 		flex-direction: column;
+	}
+	.subfoot{
+		margin: 25px;
+		gap: 5px;
 	}
 }

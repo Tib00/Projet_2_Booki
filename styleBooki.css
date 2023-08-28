@@ -37,7 +37,7 @@
 /* Ici le CSS qui concerne le corps du document */
 
 /* Ici le CSS qui concerne les premières lignes de texte */
-h1,h2,p,a{
+h1,h2,p,a,.filterbuttons_text{
 	font-family: 'Raleway', sans-serif;
 }
 h2{

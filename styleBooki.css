@@ -249,7 +249,6 @@ img[class="photo"]{
 	border-radius: 25px;
 	height: 20%;
 	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-
 }
 .card_popular_link{
 	color: black;
@@ -350,29 +349,32 @@ img[class="activitiesphoto"]{
 }
 /*Et maintenant les médias querries yeah ! */
 @media all and (min-width: 1025px){
-		.body{
-			margin: 0 auto;
-			width: 1440px;
-		}
+	.body{
+		margin: 0 auto;
+		width: 1440px;
+	}
 }
 @media all and (min-width: 768px) and (max-width: 1024px){
+	.infogroup{
+		margin: 20px 0px 0px 50px;
+	}
 	.filters{
 		width: 80%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-	
-	}
-	.filterbuttons{
-		margin-left: 5%;
 	}
 	.searchgroup{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	}
+	.card_main_body{
+		font-size: 14px;
+	}
 	.order{
-		height: 300px;
+		height: 275px;
+		margin: 15px 0px 15px 5%;
 	}
 	.offertext{
 		margin-left: 5%;
@@ -381,28 +383,27 @@ img[class="activitiesphoto"]{
 		width: 90%;
 		margin: 5%;
 	}
+	.popular_title{
+		margin: 2.5% 0% 2.5% 5%;
+	}
 	.popular_body{
 		width: 95%;
 		margin: 0% 0% 5% 2.5%;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
-	.sideoffer{
-		background-color: white;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		height: 100%;
+	.card_popular{
 		width: 30%;
+	}
+	.card_popular_body{
+		width: 55%;
+		font-size: 13px;
 	}
 	.sideofferphoto{
 		height: 90%;
 		flex: 40%;
 		margin: 2.5% 0% 5% 2%;
-	}
-	.sideoffertext{
-		flex: 55%;
 	}
 	.card_activities_photo{
 		height: 78%;
@@ -439,8 +440,11 @@ img[class="activitiesphoto"]{
 		border-bottom: 2px #0065FC solid;
 	}
 	/********** Section de recherche *************/
-	.searchbar{
-		margin: 0 auto;
+	.infogroup{
+		margin: 0px 2.5% 0px 2.5%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.searchbutton{
 		display: none;
@@ -455,11 +459,17 @@ img[class="activitiesphoto"]{
 		border-radius: 0px 15px 15px 0px;
 
 	}
+	.infobox{
+		height: 20px;
+		width: 25px;
+		border-radius: 15px;
+	}
 	/********** Filtres *************/
 	.filters{
 		width: auto;
 		display: flex;
 		flex-direction: column;
+		margin: 35px 2.5% 35px 3.5%;
 	}
 	.filterbuttons{
 		width: auto;
@@ -487,16 +497,28 @@ img[class="activitiesphoto"]{
 	}
 	.card_popular_photo{
 		height: 130px;
+		margin: 2.5%;
+	}
+	.card_popular_body{
+		margin: 2.5%;
+		width: 70%;
 	}
 	.mainOffer{
 		width: auto;
 		border: 1px white solid;
 		background-color: white;
 	}
+	.maintitle{
+		margin: 20px 0% 15px 5%;
+	}
 	.card_main{
 		width: auto;
 		height: 300px;
 		margin-bottom: 15px;
+	}
+	.card_main_body{
+		padding: 5%;
+		line-height: 1.3em;
 	}
 	.order{
 		display: flex;
@@ -517,6 +539,9 @@ img[class="activitiesphoto"]{
 	.card_activities_link{
 		width: auto;
 	}
+	.card_activities_title{
+		margin: 2%
+	}
 	.foot{
 		width: 100%;
 		margin-left: 0;
@@ -525,6 +550,5 @@ img[class="activitiesphoto"]{
 	}
 	.subfoot{
 		margin: 25px;
-		gap: 5px;
 	}
 }

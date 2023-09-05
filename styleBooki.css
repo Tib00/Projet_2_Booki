@@ -176,24 +176,26 @@ input::placeholder{
 /* Ici le CSS qui concerne les offres principales */
 .mainOffer{
 	width: 60%;
+	height: fit-content;
 	background-color: #F2F2F2;
 	border: 1px #F2F2F2 solid;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 .maintitle{
 	width: 90%;
 	margin: 2.5% 0% 0% 5%;
+	margin-bottom: 30px;
 }
 .order{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	height: 30%;
+	justify-content: space-between;
+	height: 300px;
 	width: 90%;
-	margin-left: 5%;
+	margin: 0% 0% 30px 5%;
 }
 .card_main{
 	background-color: white;
@@ -223,7 +225,7 @@ img[class="photo"]{
 .moreresults{
 	font-size: 18px;
 	font-weight: 700;
-	margin: 0% 0% 2.5% 5%;
+	margin: 0% 0% 30px 5%;
 }
 /*Ici l'offre populaire*/
 .popular{
@@ -254,7 +256,7 @@ img[class="photo"]{
 .card_popular{
 	background-color: white;
 	border-radius: 25px;
-	height: 20%;
+	height: 25%;
 	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
 .card_popular_link{
@@ -307,13 +309,13 @@ img[class="sidephoto"]{
 .activities_list{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .card_activities{
 	width: 20%;
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: 5px 5px 5px #F2F2F2;
-	margin: 2% 2% 2% 2%;
+	margin: 2% 0% 2% 0%;
 }
 .card_activities_link{
 	color: black;
@@ -493,6 +495,12 @@ img[class="activitiesphoto"]{
 	.searchgroup{
 		display: flex;
 		flex-direction: column-reverse;
+	}
+	.mainOffer{
+		border: 1px white solid;
+	}
+	.order{
+		height: 30%;
 	}
 	.popular{
 		width: auto;
